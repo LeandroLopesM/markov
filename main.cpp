@@ -1,4 +1,5 @@
 #include <atomic>
+#include <iomanip>
 #include <thread>
 #include <iostream>
 #include <sstream>
@@ -10,6 +11,17 @@
 #include <cstdlib>
 
 using namespace std;
+
+#ifndef WATCHDOG_FATAL
+	#define WATCHDOG_FATAL false
+#endif
+
+ofstream _log("stdlog.log");
+
+#define LOG_FATAL 	_log << "[FATAL] " << setw(15) << __func__ << ": "
+#define LOG_ERR		_log << "[ERROR] " << setw(15) << __func__ << ": "
+#define LOG_WARN 	_log << "[WARN ] " << setw(15) << __func__ << ": "
+#define LOG			_log << "[ LOG ] " << setw(15) << __func__ << ": "
 
 struct token;
 
@@ -35,43 +47,56 @@ int sum(const token* a)
     return ret;
 }
 
-token* random_weighed(token* e, int sums)
+token* random_weighed(token* tokens, int sums)
 {
-    int r = (rand() % sums) + 1;
+	if(tokens == nullptr)
+	{
+		LOG_ERR << "Null token" << endl;
+		exit(1);
+	}
+    
+	int rng = (rand() % sums) + 1;
+	LOG << "Seeded " << rng << endl;
 
-    for(path curr : e->paths )
+    for(path curr : tokens->paths )
     {
-        if(r <= curr.weight) {
+        if(rng <= curr.weight) {
             return curr.p;
         }
-        else r -= curr.weight;
+        else rng -= curr.weight;
     }
 
+	// e->paths is empty (this maybe should probably be a while r >= x.weight?)
     return nullptr;
 }
 
-string generate_sentence(vector<token> a, int size)
+string generate_sentence(vector<token> token_list, int size)
 {
+	if(token_list.size() == 0)
+	{
+		LOG_WARN << "Empty token_list" << endl;
+		return "";
+	}
+
     srand(time(NULL));
-    token* next = &a[0];
-    string fina = "";
+    token* next = &token_list[0];
+    string sentence = "";
 
     while(size--)
     {
         int sums = sum(next);
         next = random_weighed(next, sums);
-        if(next == nullptr) {
-            cout << "SIGSEGV'd in random_weighed" << endl;
-            return "";
-        }
 
-        fina += next->content + " ";
+		if(next == nullptr) 
+            return sentence; // SHOULD only happen if next.paths is empty
+
+        sentence += next->content + " ";
     }
 
-    return fina;
+    return sentence;
 }
 
-int index_of_str_in_path(string target, const vector<path>& paths)
+int index_of_str_in_path(const string& target, const vector<path>& paths)
 {
     int i = 0;
     for(path p : paths)
@@ -79,14 +104,17 @@ int index_of_str_in_path(string target, const vector<path>& paths)
         if(p.p->content == target) return i;
         i++;
     }
+
+	LOG_WARN << "Failed to find " << target << " in paths" << endl;
     return -1;
 }
 
-vector<string> remove_dupes(vector<string> riddled)
+// TODO: Replace with something from <algorithm>?
+vector<string> remove_dupes(vector<string> normal)
 {
     vector<string> deduped_vec;
 
-    for(string s : riddled)
+    for(string s : normal)
     {
         for(auto e : deduped_vec)
             if(s == e) goto skip;
@@ -98,13 +126,14 @@ vector<string> remove_dupes(vector<string> riddled)
     return deduped_vec;
 }
 
-token* str_in_weights(vector<token>& e, string needle)
+token* str_in_weights(vector<token>& haystack, string needle)
 {
-    for(token& a : e)
+    for(token& piece : haystack)
     {
-        if(a.content == needle) return &a;
+        if(piece.content == needle) return &piece;
     }
 
+	LOG_WARN << "Could not find " << needle << " in haystack sized " << haystack.size() << endl;
     return nullptr;
 }
 
@@ -119,51 +148,89 @@ vector<token> tokenize(const vector<string>& s)
             .content = ss,
             .paths{}
         };
+
         a.push_back(pre);
     }
 
-    for(token& b : a)
-    {
-        for(int i = 0; i < s_nocopies.size(); ++i)
-        {
-            b.paths.push_back(path {
-                .p = str_in_weights(a, s_nocopies[i]),
-                .weight = 1
-            });
-        }
-    }
+	LOG << "Total token count of " << a.size() << endl;
+
+	// Before you ask, no this can't be merged into the loop above
+	// because it expects `a` to be fully populated.
+	// If merged, you'll get incomplete paths for the first few members
+	// of the token list.
+	for(token& b : a)
+	{
+		for(int i = 0; i < s_nocopies.size(); ++i)
+		{
+			b.paths.push_back(path {
+				.p = str_in_weights(a, s_nocopies[i]),
+				.weight = 1
+			});
+
+			if(b.paths[i].p == nullptr)
+				LOG_WARN << "Expect nulls in paths for \"" << b.content << "\"" << endl;
+			
+		}
+	}
 
     return a;
 }
 
+// for std::sort
 bool weight_compare(const path &a, const path &b)
 {
     return a.weight > b.weight;
 }
 
-void weigh(vector<token>& a, const vector<string> s)
+int erased = 0;
+void remove_unlikely_paths(token& b)
+{
+	int i = 0;
+	bool found = false;
+	for(auto p : b.paths)
+	{
+		if(p.weight == 1) {
+			found = true;
+			break;
+		}	
+		i++;
+	}
+
+	if(found)
+	{
+//		LOG << "Erased " << b.paths.size() - i << " elements" << endl;
+		erased += b.paths.size() - i;
+		b.paths.erase(b.paths.begin() + i, b.paths.begin() + b.paths.size());	
+	}
+}
+
+void weigh(vector<token>& token_list, const vector<string> s)
 {
 	int index = 0;
-    for(token& b : a)
+    for(token& _token : token_list)
     {
         for(int i = 0; i < s.size(); ++i)
         {
             int c = -1;
-            if(i != s.size() - 1 && s[i] == b.content)
+            if(i != s.size() - 1 && s[i] == _token.content)
 			{
-                int c = index_of_str_in_path(s[i + 1], b.paths);
-                b.paths[c].weight += 2;
-				if(i != s.size() - 2)
+                int c = index_of_str_in_path(s[i + 1], _token.paths);
+				if(c < 0)
 				{
-					c = index_of_str_in_path(s[i + 2], b.paths);
-					b.paths[c].weight++;
+					LOG_WARN << "Could not find " << s[i] << " in paths for " << _token.content << endl;
+					continue;
 				}
+                _token.paths[c].weight += 2;
             }
         }
 		
 		// order paths
-		sort(b.paths.begin(), b.paths.end(), weight_compare);
-    }
+		std::sort(_token.paths.begin(), _token.paths.end(), weight_compare);
+
+		remove_unlikely_paths(_token);
+	}
+
+	LOG << "Erased " << erased << " low-weight elements" << endl;
 }
 
 void dump_weights(const vector<token>& e, string streamname)
@@ -236,7 +303,7 @@ void selflearn(vector<token> a, int size, int iterations)
             int sums = sum(next);
             next = random_weighed(next, sums);
             if(next == nullptr) {
-                cout << "SIGSEGV'd in random_weighed" << endl;
+                cout << "SIGSEGV" << endl;
                 return;
             }
 
@@ -257,12 +324,22 @@ void watchdog()
 {
 	auto time_ran = 0ms;
 
+	auto maxtime = 5s;
+
 	while(!done.load())
 	{
-		if(time_ran >= 5s)
+		if(time_ran >= maxtime)
 		{
-			cerr << "Main thread killed by watchdog (took too long)." << endl;
-			exit(1);
+			if(WATCHDOG_FATAL)
+			{
+				cerr << "Main thread killed by watchdog (took too long)." << endl;
+				exit(1);
+			}
+			else
+			{
+				maxtime *= 2;
+				LOG_ERR << "Watchdog timer reset (watchdog set to nonfatal)" << endl;
+			}
 		}
 		
 		time_ran += 250ms;
@@ -279,7 +356,7 @@ string read_file(string path)
 	return ss.str();
 }
 
-void memsz(vector<token>& e)
+string memsz(vector<token>& e)
 {
 	float size = sizeof(token) * e.size() * sizeof(path) * e[0].paths.size();
 	string mod = "B";
@@ -299,7 +376,10 @@ void memsz(vector<token>& e)
 		}
 	}
 
-	printf("%.1f%s", size, mod.c_str());
+	char tmp[7]; // 1023GB
+	sprintf(tmp, "%.1f%s", size, mod.c_str());
+
+	return string(tmp);
 }
 
 int main(int argc, char** argv)
@@ -311,10 +391,11 @@ int main(int argc, char** argv)
     
     auto e = tokenize(tok);
     weigh(e, tok);
-    cout << generate_sentence(e, 6) << endl; 
+    cout << generate_sentence(e, 4) << endl; 
 
 	done.store(true);
 	dump_weights(e, "Dumps.txt");
-	cout << "Total memory taken: "; memsz(e); cout << endl; 
+
+	LOG << "Total memory usage: " << memsz(e) << endl; 
     w.join();
 }

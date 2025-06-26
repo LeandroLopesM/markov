@@ -54,6 +54,12 @@ token* random_weighed(token* tokens, int sums)
 		LOG_ERR << "Null token" << endl;
 		exit(1);
 	}
+
+	if(sums <= 0) // something went quite wrong
+	{
+		LOG_WARN << "Sum is less than (or equal to) zero" << endl;
+		sums = 1;
+	}
     
 	int rng = (rand() % sums) + 1;
 	LOG << "Seeded " << rng << endl;
@@ -79,7 +85,7 @@ string generate_sentence(vector<token> token_list, int size)
 	}
 
     srand(time(NULL));
-    token* next = &token_list[0];
+    token* next = &token_list[ rand() % token_list.size()];
     string sentence = "";
 
     while(size--)
@@ -360,18 +366,21 @@ string memsz(vector<token>& e)
 {
 	float size = sizeof(token) * e.size() * sizeof(path) * e[0].paths.size();
 	string mod = "B";
-	if(size / 1024 >= 1) // kb
+	if(size != 0)
 	{
-		mod = "kb";
-		size /= 1024;
-		if(size / 1024 >= 1) // Mb
+		if(size / 1024 >= 1) // kb
 		{
-			mod = "MB";
+			mod = "kb";
 			size /= 1024;
-			if(size / 1024 >= 1) // GB
+			if(size / 1024 >= 1) // Mb
 			{
-				mod = "GB";
+				mod = "MB";
 				size /= 1024;
+				if(size / 1024 >= 1) // GB
+				{
+					mod = "GB";
+					size /= 1024;
+				}
 			}
 		}
 	}

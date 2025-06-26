@@ -1,0 +1,7 @@
+[ LOG ]        tokenize: Total token count of 514
+[ LOG ]           weigh: Erased 263378 low-weight elements
+[ LOG ]  random_weighed: Seeded 3
+[ LOG ]  random_weighed: Seeded 7
+[ LOG ]  random_weighed: Seeded 6
+[ LOG ]  random_weighed: Seeded 16
+[ LOG ]            main: Total memory usage: 899.5kb

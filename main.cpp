@@ -33,19 +33,10 @@ struct path
 
 struct token {
     string content;    
+
+	unsigned int weight_sum;
     vector<path> paths; 
 };
-
-int sum(const token* a)
-{
-    int ret = 0; 
-    for(path b : a->paths)
-    {
-        ret += b.weight; 
-    }
-
-    return ret;
-}
 
 token* random_weighed(token* tokens, int sums)
 {
@@ -90,7 +81,7 @@ string generate_sentence(vector<token> token_list, int size)
 
     while(size--)
     {
-        int sums = sum(next);
+        int sums = next->weight_sum;
         next = random_weighed(next, sums);
 
 		if(next == nullptr) 
@@ -226,7 +217,9 @@ void weigh(vector<token>& token_list, const vector<string> s)
 					LOG_WARN << "Could not find " << s[i] << " in paths for " << _token.content << endl;
 					continue;
 				}
-                _token.paths[c].weight += 2;
+
+                _token.paths[c].weight++;
+				_token.weight_sum++;
             }
         }
 		
@@ -306,8 +299,7 @@ void selflearn(vector<token> a, int size, int iterations)
 
         while(size--)
         {
-            int sums = sum(next);
-            next = random_weighed(next, sums);
+            next = random_weighed(next, next->weight_sum);
             if(next == nullptr) {
                 cout << "SIGSEGV" << endl;
                 return;
@@ -393,18 +385,49 @@ string memsz(vector<token>& e)
 
 int main(int argc, char** argv)
 {
-	if(argc <= 1) return 1;
-    std::thread w(watchdog);
+	if(argc <= 1) 
+	{
+		cerr << "Usage: markov <token_source.txt> [-len x]" << endl;
+		return 1;
+	}
 
-    auto tok = str_to_tok(read_file(string(argv[1])));
-    
+	argc--; argv++;
+	int length = 3;
+	string filename = "";
+	bool dump = false;
+
+	for(int i = 0; i < argc; ++i)
+	{
+		string as_string = static_cast<string>(argv[i]);
+
+		if(as_string == "--len" || as_string == "-l")
+		{
+			length = atoi(argv[i + 1]);
+			i++;
+		}
+		else if(as_string == "--dump" || as_string == "-d")
+		{
+			dump = true;
+		}
+		else
+		{
+			filename = string(argv[i]);
+		}
+	}
+
+	std::thread w(watchdog);
+
+    auto tok = str_to_tok(read_file(filename));
     auto e = tokenize(tok);
     weigh(e, tok);
-    cout << generate_sentence(e, 4) << endl; 
 
-	done.store(true);
-	dump_weights(e, "Dumps.txt");
+    cout << generate_sentence(e, length) << endl; 
+
+	done = true;
+	if(dump)
+		dump_weights(e, "Dumps.txt");
 
 	LOG << "Total memory usage: " << memsz(e) << endl; 
-    w.join();
+
+	w.join();
 }

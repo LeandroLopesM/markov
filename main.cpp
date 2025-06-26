@@ -76,6 +76,7 @@ string generate_sentence(vector<token> token_list, int size)
 	}
 
     srand(time(NULL));
+
     token* next = &token_list[ rand() % token_list.size()];
     string sentence = "";
 
@@ -268,11 +269,11 @@ vector<string> str_to_tok(const string& full_str)
 
 	int i = 0; // clean code amirite?
 
-    for( ; i <= full_str.size() ; )
+	while( i <= full_str.size() )
     {
         char c = full_str[i++];
 
-        if(!valid_token_char(c) || i == full_str.size())
+        if( !valid_token_char(c) || i == full_str.size() )
 		{
             if(buff != "") ret.push_back(buff);
             buff = "";
@@ -282,15 +283,23 @@ vector<string> str_to_tok(const string& full_str)
         buff += as_lower(c);
     }
 
+	LOG << "Raw token count: " << ret.size() << endl;
+
     return ret;
 }
 
 
 void selflearn(vector<token> a, int size, int iterations)
 {
+	if(a.size() == 0)
+	{
+		LOG_ERR << "Token list is empty" << endl;
+		return;
+	}
     srand(time(NULL));
-    token* next = &a[0];
-    string fina = "";
+
+    token* next = &a[ rand() % a.size() ];
+    string sentence = "";
     int sizecpy = size;
 
     while(iterations--)
@@ -300,20 +309,20 @@ void selflearn(vector<token> a, int size, int iterations)
         while(size--)
         {
             next = random_weighed(next, next->weight_sum);
-            if(next == nullptr) {
-                cout << "SIGSEGV" << endl;
+    
+			if(next == nullptr) {
+                LOG_ERR << "Averted SIGSEGV" << endl;
                 return;
             }
 
-            fina += next->content + " ";
+            sentence += next->content + " ";
         }
-        cout << iterations<< " : " << fina << endl;
+       	LOG << "I " << iterations<< " : " << sentence << endl;
 
-        auto tok = str_to_tok(fina);        
-        // auto e = tokenize(tok);
-        weigh(a, tok);
+        auto tokens = str_to_tok(sentence);
+        weigh(a, tokens);
         
-        fina = "";
+		sentence = "";
     }
 }
 
@@ -336,7 +345,7 @@ void watchdog()
 			else
 			{
 				maxtime *= 2;
-				LOG_ERR << "Watchdog timer reset (watchdog set to nonfatal)" << endl;
+				LOG_ERR << "Watchdog timer reset at" << to_string(time_ran.count() / 1000) << "s" << " (watchdog set to nonfatal)" << endl;
 			}
 		}
 		
@@ -383,17 +392,28 @@ string memsz(vector<token>& e)
 	return string(tmp);
 }
 
+void print_help()
+{
+	cout << "Usage: markov file.txt [ --len/-l sentence_length ] [ --dump/-d ] [ --learn/-l iteration_count ]" << endl;
+	exit(0);
+}
+
 int main(int argc, char** argv)
 {
 	if(argc <= 1) 
 	{
-		cerr << "Usage: markov <token_source.txt> [-len x]" << endl;
+		print_help();
 		return 1;
 	}
 
 	argc--; argv++;
-	int length = 3;
+
 	string filename = "";
+
+	int iterations = 1;
+	int length = 3;
+
+	bool learn = false;
 	bool dump = false;
 
 	for(int i = 0; i < argc; ++i)
@@ -402,12 +422,21 @@ int main(int argc, char** argv)
 
 		if(as_string == "--len" || as_string == "-l")
 		{
+			if(i + 1 == argc) print_help();
+
 			length = atoi(argv[i + 1]);
 			i++;
 		}
 		else if(as_string == "--dump" || as_string == "-d")
 		{
 			dump = true;
+		}
+		else if(as_string == "--learn" || as_string == "-l")
+		{
+			if(i + 1 == argc) print_help();
+
+			iterations = atoi(argv[i + 1]);
+			learn = true;
 		}
 		else
 		{
@@ -421,7 +450,12 @@ int main(int argc, char** argv)
     auto e = tokenize(tok);
     weigh(e, tok);
 
-    cout << generate_sentence(e, length) << endl; 
+	if(learn)
+	{
+		int iteration_length = 25; // greater lengths yield better training
+		selflearn(e, iteration_length, iterations);
+	}
+	cout << generate_sentence(e, length) << endl;
 
 	done = true;
 	if(dump)

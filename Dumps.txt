@@ -1,0 +1,2968 @@
+"101"
+	S "easy",
+	W 2
+
+	S "well",
+	W 2
+
+"easy"
+	S "ways",
+	W 2
+
+"ways"
+	S "to",
+	W 2
+
+"to"
+	S "the",
+	W 6
+
+	S "see",
+	W 5
+
+	S "be",
+	W 5
+
+	S "go",
+	W 4
+
+	S "say",
+	W 3
+
+	S "leave",
+	W 2
+
+	S "gregorian",
+	W 2
+
+	S "bermuda",
+	W 2
+
+	S "wash",
+	W 2
+
+	S "watch",
+	W 2
+
+	S "jog",
+	W 2
+
+	S "knit",
+	W 2
+
+	S "try",
+	W 2
+
+	S "yugoslavia",
+	W 2
+
+	S "bleach",
+	W 2
+
+	S "look",
+	W 2
+
+	S "fulfill",
+	W 2
+
+	S "yodel",
+	W 2
+
+	S "thaw",
+	W 2
+
+	S "work",
+	W 2
+
+	S "take",
+	W 2
+
+	S "court",
+	W 2
+
+	S "count",
+	W 2
+
+	S "richard",
+	W 2
+
+	S "check",
+	W 2
+
+	S "my",
+	W 2
+
+	S "cincinnati",
+	W 2
+
+	S "draw",
+	W 2
+
+	S "cut",
+	W 2
+
+	S "eat",
+	W 2
+
+	S "sit",
+	W 2
+
+	S "but",
+	W 2
+
+	S "undo",
+	W 2
+
+	S "floss",
+	W 2
+
+	S "study",
+	W 2
+
+	S "rotate",
+	W 2
+
+	S "help",
+	W 2
+
+	S "answer",
+	W 2
+
+	S "remain",
+	W 2
+
+	S "fluff",
+	W 2
+
+	S "stay",
+	W 2
+
+	S "linguini",
+	W 2
+
+	S "door",
+	W 2
+
+	S "spend",
+	W 2
+
+"say"
+	S "no",
+	W 2
+
+	S "tuned",
+	W 2
+
+"no"
+	S "45",
+	W 2
+
+	S "i",
+	W 2
+
+"i"
+	S "m",
+	W 39
+
+	S "have",
+	W 22
+
+	S "ve",
+	W 7
+
+	S "can",
+	W 4
+
+	S "never",
+	W 3
+
+	S "changed",
+	W 2
+
+	S "made",
+	W 2
+
+	S "just",
+	W 2
+
+	S "don",
+	W 2
+
+	S "ll",
+	W 2
+
+	S "feel",
+	W 2
+
+	S "want",
+	W 2
+
+	S "snore",
+	W 2
+
+	S "prefer",
+	W 2
+
+	S "think",
+	W 2
+
+	S "promised",
+	W 2
+
+	S "went",
+	W 2
+
+	S "left",
+	W 2
+
+	S "d",
+	W 2
+
+	S "did",
+	W 2
+
+"d"
+	S "love",
+	W 2
+
+"love"
+	S "to",
+	W 2
+
+	S "letter",
+	W 2
+
+"but"
+	S "1",
+	W 2
+
+"1"
+	S "i",
+	W 2
+
+"have"
+	S "to",
+	W 20
+
+	S "too",
+	W 2
+
+	S "some",
+	W 2
+
+"floss"
+	S "my",
+	W 2
+
+"my"
+	S "comfort",
+	W 2
+
+	S "dress",
+	W 2
+
+	S "door",
+	W 2
+
+	S "blender",
+	W 2
+
+	S "shower",
+	W 2
+
+	S "vertical",
+	W 2
+
+	S "palm",
+	W 2
+
+	S "plants",
+	W 2
+
+	S "memory",
+	W 2
+
+	S "baby",
+	W 2
+
+	S "elbows",
+	W 2
+
+	S "bathroom",
+	W 2
+
+	S "crayons",
+	W 2
+
+	S "toothbrush",
+	W 2
+
+	S "calendar",
+	W 2
+
+	S "other",
+	W 2
+
+	S "potential",
+	W 2
+
+	S "favorite",
+	W 2
+
+	S "hare",
+	W 2
+
+	S "dairy",
+	W 2
+
+	S "millard",
+	W 2
+
+	S "yucca",
+	W 2
+
+	S "plot",
+	W 2
+
+	S "own",
+	W 2
+
+	S "mother",
+	W 2
+
+	S "body",
+	W 2
+
+	S "patent",
+	W 2
+
+	S "parakeet",
+	W 2
+
+	S "cottage",
+	W 2
+
+	S "chocolate",
+	W 2
+
+	S "refrigerator",
+	W 2
+
+	S "crops",
+	W 2
+
+	S "occupant",
+	W 2
+
+	S "overalls",
+	W 2
+
+	S "cat",
+	W 2
+
+	S "subconscious",
+	W 2
+
+	S "garage",
+	W 2
+
+	S "ferret",
+	W 2
+
+	S "life",
+	W 2
+
+	S "socks",
+	W 2
+
+	S "uncle",
+	W 2
+
+	S "oven",
+	W 2
+
+	S "hair",
+	W 2
+
+"cat"
+	S "2",
+	W 2
+
+"2"
+	S "i",
+	W 2
+
+"ve"
+	S "got",
+	W 3
+
+	S "been",
+	W 3
+
+	S "dedicated",
+	W 2
+
+	S "come",
+	W 2
+
+"dedicated"
+	S "my",
+	W 2
+
+"life"
+	S "to",
+	W 2
+
+"linguini"
+	S "3",
+	W 2
+
+"3"
+	S "i",
+	W 2
+
+"want"
+	S "to",
+	W 3
+
+	S "the",
+	W 2
+
+"spend"
+	S "more",
+	W 2
+
+"more"
+	S "dots",
+	W 2
+
+	S "time",
+	W 2
+
+"time"
+	S "i",
+	W 2
+
+	S "with",
+	W 2
+
+"with"
+	S "a",
+	W 6
+
+	S "others",
+	W 2
+
+	S "my",
+	W 2
+
+"blender"
+	S "4",
+	W 2
+
+"4"
+	S "the",
+	W 2
+
+"the"
+	S "other",
+	W 3
+
+	S "missing",
+	W 2
+
+	S "century",
+	W 2
+
+	S "turn",
+	W 2
+
+	S "force",
+	W 2
+
+	S "next",
+	W 2
+
+	S "grunion",
+	W 2
+
+	S "president",
+	W 2
+
+	S "freshness",
+	W 2
+
+	S "bristles",
+	W 2
+
+	S "opening",
+	W 2
+
+	S "man",
+	W 2
+
+	S "world",
+	W 2
+
+	S "spanish",
+	W 2
+
+	S "post",
+	W 2
+
+	S "bakery",
+	W 2
+
+	S "lock",
+	W 2
+
+	S "buns",
+	W 2
+
+	S "end",
+	W 2
+
+	S "monsters",
+	W 2
+
+	S "last",
+	W 2
+
+	S "thing",
+	W 2
+
+	S "dictionary",
+	W 2
+
+"president"
+	S "said",
+	W 2
+
+"said"
+	S "he",
+	W 2
+
+"he"
+	S "might",
+	W 2
+
+"might"
+	S "drop",
+	W 2
+
+"drop"
+	S "in",
+	W 2
+
+"in"
+	S "my",
+	W 4
+
+	S "the",
+	W 3
+
+	S "waxy",
+	W 2
+
+	S "many",
+	W 2
+
+	S "5",
+	W 2
+
+	S "aerobic",
+	W 2
+
+	S "y",
+	W 2
+
+	S "training",
+	W 2
+
+"5"
+	S "the",
+	W 2
+
+"man"
+	S "on",
+	W 2
+
+"on"
+	S "my",
+	W 4
+
+	S "television",
+	W 2
+
+	S "gloves",
+	W 2
+
+	S "72",
+	W 2
+
+	S "days",
+	W 2
+
+	S "the",
+	W 2
+
+	S "tv",
+	W 2
+
+"television"
+	S "told",
+	W 2
+
+"told"
+	S "me",
+	W 2
+
+"me"
+	S "hear",
+	W 2
+
+	S "to",
+	W 2
+
+	S "prickly",
+	W 2
+
+	S "93",
+	W 2
+
+	S "for",
+	W 2
+
+"tuned"
+	S "6",
+	W 2
+
+"6"
+	S "i",
+	W 2
+
+"been"
+	S "traded",
+	W 2
+
+	S "scheduled",
+	W 2
+
+"scheduled"
+	S "for",
+	W 2
+
+"for"
+	S "a",
+	W 5
+
+	S "obscurity",
+	W 2
+
+	S "an",
+	W 2
+
+	S "me",
+	W 2
+
+	S "static",
+	W 2
+
+	S "kitty",
+	W 2
+
+	S "dinner",
+	W 2
+
+	S "the",
+	W 2
+
+	S "that",
+	W 2
+
+"a"
+	S "blood",
+	W 2
+
+	S "song",
+	W 2
+
+	S "winner",
+	W 2
+
+	S "book",
+	W 2
+
+	S "cuticle",
+	W 2
+
+	S "karma",
+	W 2
+
+	S "really",
+	W 2
+
+	S "foreign",
+	W 2
+
+	S "home",
+	W 2
+
+	S "convenience",
+	W 2
+
+	S "disturbance",
+	W 2
+
+	S "perfume",
+	W 2
+
+	S "parking",
+	W 2
+
+	S "charity",
+	W 2
+
+	S "wok",
+	W 2
+
+	S "pig",
+	W 2
+
+	S "kit",
+	W 2
+
+	S "friends",
+	W 2
+
+	S "friend",
+	W 2
+
+	S "household",
+	W 2
+
+	S "love",
+	W 2
+
+	S "sick",
+	W 2
+
+"karma"
+	S "transplant",
+	W 2
+
+"transplant"
+	S "7",
+	W 2
+
+"7"
+	S "i",
+	W 2
+
+"m"
+	S "going",
+	W 6
+
+	S "trying",
+	W 4
+
+	S "attending",
+	W 3
+
+	S "having",
+	W 3
+
+	S "already",
+	W 2
+
+	S "sandblasting",
+	W 2
+
+	S "touring",
+	W 2
+
+	S "too",
+	W 2
+
+	S "worried",
+	W 2
+
+	S "converting",
+	W 2
+
+	S "in",
+	W 2
+
+	S "waiting",
+	W 2
+
+	S "uncomfortable",
+	W 2
+
+	S "doing",
+	W 2
+
+	S "teaching",
+	W 2
+
+	S "writing",
+	W 2
+
+	S "making",
+	W 2
+
+	S "still",
+	W 2
+
+	S "running",
+	W 2
+
+	S "staying",
+	W 2
+
+	S "being",
+	W 2
+
+	S "building",
+	W 2
+
+	S "planning",
+	W 2
+
+	S "giving",
+	W 2
+
+	S "enrolled",
+	W 2
+
+	S "up",
+	W 2
+
+	S "observing",
+	W 2
+
+	S "alone",
+	W 2
+
+	S "taking",
+	W 2
+
+	S "getting",
+	W 2
+
+"staying"
+	S "home",
+	W 2
+
+"home"
+	S "movie",
+	W 2
+
+	S "to",
+	W 2
+
+	S "and",
+	W 2
+
+"work"
+	S "on",
+	W 2
+
+"cottage"
+	S "cheese",
+	W 2
+
+"cheese"
+	S "sculpture",
+	W 2
+
+"sculpture"
+	S "8",
+	W 2
+
+"8"
+	S "it",
+	W 2
+
+"it"
+	S "s",
+	W 3
+
+	S "12",
+	W 2
+
+	S "62",
+	W 2
+
+	S "95",
+	W 2
+
+	S "wouldn",
+	W 2
+
+	S "down",
+	W 2
+
+"s"
+	S "too",
+	W 2
+
+	S "my",
+	W 2
+
+	S "bowling",
+	W 2
+
+	S "a",
+	W 2
+
+"parakeet"
+	S "s",
+	W 2
+
+"bowling"
+	S "night",
+	W 2
+
+"night"
+	S "9",
+	W 2
+
+	S "60",
+	W 2
+
+"9"
+	S "it",
+	W 2
+
+"wouldn"
+	S "t",
+	W 2
+
+"t"
+	S "turned",
+	W 2
+
+	S "be",
+	W 2
+
+	S "want",
+	W 2
+
+	S "put",
+	W 2
+
+	S "get",
+	W 2
+
+"be"
+	S "fair",
+	W 2
+
+	S "on",
+	W 2
+
+	S "looking",
+	W 2
+
+	S "old",
+	W 2
+
+	S "less",
+	W 2
+
+	S "a",
+	W 2
+
+"fair"
+	S "to",
+	W 2
+
+"other"
+	S "beautiful",
+	W 2
+
+	S "38",
+	W 2
+
+	S "clothes",
+	W 2
+
+	S "your",
+	W 2
+
+"beautiful"
+	S "people",
+	W 2
+
+"people"
+	S "are",
+	W 2
+
+	S "10",
+	W 2
+
+"10"
+	S "i",
+	W 2
+
+"building"
+	S "a",
+	W 2
+
+"pig"
+	S "from",
+	W 2
+
+"from"
+	S "julian",
+	W 2
+
+	S "a",
+	W 2
+
+"kit"
+	S "11",
+	W 2
+
+"11"
+	S "i",
+	W 2
+
+"did"
+	S "my",
+	W 2
+
+"own"
+	S "thing",
+	W 2
+
+"thing"
+	S "and",
+	W 2
+
+	S "that",
+	W 2
+
+"and"
+	S "now",
+	W 3
+
+	S "i",
+	W 3
+
+	S "see",
+	W 2
+
+"now"
+	S "i",
+	W 3
+
+"got"
+	S "to",
+	W 2
+
+	S "a",
+	W 2
+
+"undo"
+	S "it",
+	W 2
+
+"12"
+	S "i",
+	W 2
+
+"enrolled"
+	S "in",
+	W 2
+
+"aerobic"
+	S "scream",
+	W 2
+
+"scream"
+	S "therapy",
+	W 2
+
+"therapy"
+	S "13",
+	W 2
+
+"13"
+	S "there",
+	W 2
+
+"there"
+	S "are",
+	W 2
+
+	S "s",
+	W 2
+
+"disturbance"
+	S "in",
+	W 2
+
+"force"
+	S "14",
+	W 2
+
+"14"
+	S "i",
+	W 2
+
+"doing"
+	S "door",
+	W 2
+
+"door"
+	S "collecting",
+	W 2
+
+	S "to",
+	W 2
+
+	S "and",
+	W 2
+
+	S "26",
+	W 2
+
+"collecting"
+	S "for",
+	W 2
+
+"static"
+	S "cling",
+	W 2
+
+"cling"
+	S "15",
+	W 2
+
+"15"
+	S "i",
+	W 2
+
+"go"
+	S "to",
+	W 3
+
+	S "out",
+	W 2
+
+	S "downtown",
+	W 2
+
+	S "without",
+	W 2
+
+"post"
+	S "office",
+	W 2
+
+"office"
+	S "to",
+	W 2
+
+"see"
+	S "if",
+	W 5
+
+	S "how",
+	W 2
+
+"if"
+	S "i",
+	W 4
+
+	S "anyone",
+	W 2
+
+"still"
+	S "wanted",
+	W 2
+
+"wanted"
+	S "16",
+	W 2
+
+"16"
+	S "i",
+	W 2
+
+"teaching"
+	S "my",
+	W 2
+
+"ferret"
+	S "to",
+	W 2
+
+"yodel"
+	S "17",
+	W 2
+
+"17"
+	S "i",
+	W 2
+
+"check"
+	S "the",
+	W 2
+
+"freshness"
+	S "dates",
+	W 2
+
+"dates"
+	S "on",
+	W 2
+
+"dairy"
+	S "products",
+	W 2
+
+"products"
+	S "18",
+	W 2
+
+"18"
+	S "i",
+	W 2
+
+"going"
+	S "to",
+	W 4
+
+	S "down",
+	W 2
+
+	S "through",
+	W 2
+
+"through"
+	S "cherry",
+	W 2
+
+"cherry"
+	S "cheesecake",
+	W 2
+
+"cheesecake"
+	S "withdrawl",
+	W 2
+
+"withdrawl"
+	S "19",
+	W 2
+
+"19"
+	S "i",
+	W 2
+
+"planning"
+	S "to",
+	W 2
+
+"downtown"
+	S "to",
+	W 2
+
+"try"
+	S "on",
+	W 2
+
+"gloves"
+	S "20",
+	W 2
+
+"20"
+	S "my",
+	W 2
+
+"crayons"
+	S "all",
+	W 2
+
+"all"
+	S "melted",
+	W 2
+
+	S "my",
+	W 2
+
+	S "of",
+	W 2
+
+"melted"
+	S "together",
+	W 2
+
+"together"
+	S "21",
+	W 2
+
+"21"
+	S "i",
+	W 2
+
+"trying"
+	S "to",
+	W 4
+
+"how"
+	S "we",
+	W 2
+
+	S "long",
+	W 2
+
+"long"
+	S "i",
+	W 2
+
+"can"
+	S "t",
+	W 3
+
+	S "go",
+	W 2
+
+"without"
+	S "saying",
+	W 2
+
+"saying"
+	S "yes",
+	W 2
+
+"yes"
+	S "22",
+	W 2
+
+"22"
+	S "i",
+	W 2
+
+"training"
+	S "to",
+	W 2
+
+"household"
+	S "pest",
+	W 2
+
+"pest"
+	S "23",
+	W 2
+
+"23"
+	S "i",
+	W 2
+
+"getting"
+	S "my",
+	W 2
+
+"overalls"
+	S "overhauled",
+	W 2
+
+"overhauled"
+	S "24",
+	W 2
+
+"24"
+	S "my",
+	W 2
+
+"patent"
+	S "is",
+	W 2
+
+"is"
+	S "on",
+	W 2
+
+	S "feeling",
+	W 2
+
+	S "pending",
+	W 2
+
+	S "looking",
+	W 2
+
+	S "thickening",
+	W 2
+
+"pending"
+	S "25",
+	W 2
+
+"25"
+	S "i",
+	W 2
+
+"attending"
+	S "a",
+	W 2
+
+	S "the",
+	W 2
+
+"opening"
+	S "of",
+	W 2
+
+"of"
+	S "my",
+	W 4
+
+	S "rutabaga",
+	W 2
+
+	S "something",
+	W 2
+
+	S "the",
+	W 2
+
+	S "it",
+	W 2
+
+"garage"
+	S "door",
+	W 2
+
+"26"
+	S "i",
+	W 2
+
+"sandblasting"
+	S "my",
+	W 2
+
+"oven"
+	S "27",
+	W 2
+
+"27"
+	S "i",
+	W 2
+
+"worried"
+	S "about",
+	W 2
+
+"about"
+	S "my",
+	W 2
+
+	S "68",
+	W 2
+
+"vertical"
+	S "hold",
+	W 2
+
+"hold"
+	S "28",
+	W 2
+
+"28"
+	S "i",
+	W 2
+
+"down"
+	S "101",
+	W 2
+
+	S "to",
+	W 2
+
+	S "64",
+	W 2
+
+	S "with",
+	W 2
+
+"bakery"
+	S "to",
+	W 2
+
+"watch"
+	S "the",
+	W 2
+
+	S "from",
+	W 2
+
+"buns"
+	S "rise",
+	W 2
+
+"rise"
+	S "29",
+	W 2
+
+"29"
+	S "i",
+	W 2
+
+"being"
+	S "deported",
+	W 2
+
+"deported"
+	S "30",
+	W 2
+
+"30"
+	S "the",
+	W 2
+
+"grunion"
+	S "are",
+	W 2
+
+"are"
+	S "running",
+	W 2
+
+	S "blaming",
+	W 2
+
+	S "78",
+	W 2
+
+	S "important",
+	W 2
+
+"running"
+	S "31",
+	W 2
+
+	S "off",
+	W 2
+
+"31"
+	S "i",
+	W 2
+
+"ll"
+	S "be",
+	W 2
+
+"looking"
+	S "for",
+	W 3
+
+"parking"
+	S "space",
+	W 2
+
+"space"
+	S "32",
+	W 2
+
+"32"
+	S "my",
+	W 2
+
+"millard"
+	S "filmore",
+	W 2
+
+"filmore"
+	S "fan",
+	W 2
+
+"fan"
+	S "club",
+	W 2
+
+"club"
+	S "meets",
+	W 2
+
+"meets"
+	S "then",
+	W 3
+
+	S "that",
+	W 2
+
+"then"
+	S "96",
+	W 2
+
+	S "33",
+	W 2
+
+"33"
+	S "the",
+	W 2
+
+"monsters"
+	S "haven",
+	W 2
+
+"haven"
+	S "t",
+	W 2
+
+"turned"
+	S "blue",
+	W 2
+
+"blue"
+	S "yet",
+	W 2
+
+"yet"
+	S "and",
+	W 2
+
+"eat"
+	S "more",
+	W 2
+
+"dots"
+	S "34",
+	W 2
+
+"34"
+	S "i",
+	W 2
+
+"taking"
+	S "punk",
+	W 2
+
+"punk"
+	S "totem",
+	W 2
+
+"totem"
+	S "pole",
+	W 2
+
+"pole"
+	S "carving",
+	W 2
+
+"carving"
+	S "35",
+	W 2
+
+"35"
+	S "i",
+	W 2
+
+"fluff"
+	S "my",
+	W 2
+
+"shower"
+	S "cap",
+	W 2
+
+"cap"
+	S "36",
+	W 2
+
+"36"
+	S "i",
+	W 2
+
+"converting"
+	S "my",
+	W 2
+
+"calendar"
+	S "watch",
+	W 2
+
+"julian"
+	S "to",
+	W 2
+
+"gregorian"
+	S "37",
+	W 2
+
+"37"
+	S "i",
+	W 2
+
+"come"
+	S "down",
+	W 2
+
+"really"
+	S "horrible",
+	W 2
+
+"horrible"
+	S "case",
+	W 2
+
+"case"
+	S "of",
+	W 2
+
+"something"
+	S "or",
+	W 2
+
+"or"
+	S "other",
+	W 2
+
+	S "with",
+	W 2
+
+"38"
+	S "i",
+	W 2
+
+"made"
+	S "an",
+	W 2
+
+"an"
+	S "appointment",
+	W 2
+
+	S "art",
+	W 2
+
+	S "enigma",
+	W 2
+
+"appointment"
+	S "with",
+	W 2
+
+"cuticle"
+	S "specialist",
+	W 2
+
+"specialist"
+	S "39",
+	W 2
+
+"39"
+	S "my",
+	W 2
+
+"plot"
+	S "to",
+	W 2
+
+"take"
+	S "over",
+	W 2
+
+"over"
+	S "the",
+	W 2
+
+"world"
+	S "is",
+	W 2
+
+	S "issues",
+	W 2
+
+"thickening"
+	S "40",
+	W 2
+
+"40"
+	S "i",
+	W 2
+
+"fulfill"
+	S "my",
+	W 2
+
+"potential"
+	S "41",
+	W 2
+
+"41"
+	S "i",
+	W 2
+
+"don"
+	S "t",
+	W 2
+
+"leave"
+	S "my",
+	W 2
+
+"comfort"
+	S "zone",
+	W 2
+
+"zone"
+	S "42",
+	W 2
+
+"42"
+	S "it",
+	W 2
+
+"too"
+	S "much",
+	W 2
+
+	S "close",
+	W 2
+
+	S "old",
+	W 2
+
+"close"
+	S "to",
+	W 2
+
+"turn"
+	S "of",
+	W 2
+
+"century"
+	S "43",
+	W 2
+
+"43"
+	S "i",
+	W 2
+
+"some"
+	S "dust",
+	W 2
+
+	S "karate",
+	W 2
+
+	S "real",
+	W 2
+
+"real"
+	S "hard",
+	W 2
+
+"hard"
+	S "words",
+	W 2
+
+"words"
+	S "to",
+	W 2
+
+"look"
+	S "up",
+	W 2
+
+"up"
+	S "in",
+	W 2
+
+	S "to",
+	W 2
+
+	S "a",
+	W 2
+
+	S "with",
+	W 2
+
+"dictionary"
+	S "44",
+	W 2
+
+"44"
+	S "my",
+	W 2
+
+"subconscious"
+	S "says",
+	W 2
+
+"says"
+	S "no",
+	W 2
+
+"45"
+	S "i",
+	W 2
+
+"giving"
+	S "nuisance",
+	W 2
+
+"nuisance"
+	S "lessons",
+	W 2
+
+"lessons"
+	S "at",
+	W 2
+
+"at"
+	S "a",
+	W 2
+
+"convenience"
+	S "store",
+	W 2
+
+"store"
+	S "46",
+	W 2
+
+"46"
+	S "i",
+	W 2
+
+"left"
+	S "my",
+	W 2
+
+"body"
+	S "in",
+	W 2
+
+"clothes"
+	S "47",
+	W 2
+
+"47"
+	S "the",
+	W 2
+
+"last"
+	S "time",
+	W 2
+
+"went"
+	S "i",
+	W 2
+
+"never"
+	S "let",
+	W 2
+
+	S "go",
+	W 2
+
+	S "came",
+	W 2
+
+"came"
+	S "back",
+	W 2
+
+"back"
+	S "48",
+	W 2
+
+"48"
+	S "i",
+	W 2
+
+"friends"
+	S "of",
+	W 2
+
+"rutabaga"
+	S "meeting",
+	W 2
+
+"meeting"
+	S "49",
+	W 2
+
+"49"
+	S "i",
+	W 2
+
+"answer"
+	S "all",
+	W 2
+
+"occupant"
+	S "letters",
+	W 2
+
+"letters"
+	S "50",
+	W 2
+
+"50"
+	S "none",
+	W 2
+
+"none"
+	S "of",
+	W 2
+
+"socks"
+	S "match",
+	W 2
+
+"match"
+	S "51",
+	W 2
+
+"51"
+	S "i",
+	W 2
+
+"next"
+	S "train",
+	W 2
+
+"train"
+	S "to",
+	W 2
+
+"bermuda"
+	S "52",
+	W 2
+
+"52"
+	S "i",
+	W 2
+
+"having"
+	S "all",
+	W 2
+
+	S "fun",
+	W 2
+
+	S "my",
+	W 2
+
+"plants"
+	S "neutered",
+	W 2
+
+"neutered"
+	S "53",
+	W 2
+
+"53"
+	S "people",
+	W 2
+
+"blaming"
+	S "me",
+	W 2
+
+"spanish"
+	S "american",
+	W 2
+
+"american"
+	S "war",
+	W 2
+
+"war"
+	S "54",
+	W 2
+
+"54"
+	S "i",
+	W 2
+
+"changed"
+	S "the",
+	W 2
+
+"lock"
+	S "on",
+	W 2
+
+"get"
+	S "out",
+	W 2
+
+"out"
+	S "55",
+	W 2
+
+	S "on",
+	W 2
+
+"55"
+	S "i",
+	W 2
+
+"making"
+	S "a",
+	W 2
+
+"movie"
+	S "called",
+	W 2
+
+"called"
+	S "glue",
+	W 2
+
+	S "the",
+	W 2
+
+"that"
+	S "night",
+	W 2
+
+	S "grew",
+	W 2
+
+	S "end",
+	W 2
+
+	S "stuff",
+	W 2
+
+	S "need",
+	W 2
+
+"grew"
+	S "in",
+	W 2
+
+"refrigerator"
+	S "56",
+	W 2
+
+"56"
+	S "i",
+	W 2
+
+"perfume"
+	S "convention",
+	W 2
+
+"convention"
+	S "as",
+	W 2
+
+"as"
+	S "guest",
+	W 2
+
+"guest"
+	S "sniffer",
+	W 2
+
+"sniffer"
+	S "57",
+	W 2
+
+"57"
+	S "my",
+	W 2
+
+"yucca"
+	S "plant",
+	W 2
+
+"plant"
+	S "is",
+	W 2
+
+"feeling"
+	S "yucky",
+	W 2
+
+"yucky"
+	S "58",
+	W 2
+
+"58"
+	S "i",
+	W 2
+
+"touring"
+	S "china",
+	W 2
+
+"china"
+	S "with",
+	W 2
+
+"wok"
+	S "band",
+	W 2
+
+"band"
+	S "59",
+	W 2
+
+"59"
+	S "my",
+	W 2
+
+"chocolate"
+	S "appreciation",
+	W 2
+
+"appreciation"
+	S "class",
+	W 2
+
+"class"
+	S "meets",
+	W 3
+
+"60"
+	S "i",
+	W 2
+
+"days"
+	S "that",
+	W 2
+
+"end"
+	S "in",
+	W 2
+
+	S "of",
+	W 2
+
+"y"
+	S "61",
+	W 2
+
+"61"
+	S "my",
+	W 2
+
+"mother"
+	S "would",
+	W 2
+
+"would"
+	S "never",
+	W 2
+
+"let"
+	S "me",
+	W 2
+
+"hear"
+	S "the",
+	W 2
+
+"62"
+	S "i",
+	W 2
+
+"off"
+	S "to",
+	W 2
+
+"yugoslavia"
+	S "with",
+	W 2
+
+"foreign"
+	S "exchange",
+	W 2
+
+"exchange"
+	S "student",
+	W 2
+
+"student"
+	S "named",
+	W 2
+
+"named"
+	S "basil",
+	W 2
+
+"basil"
+	S "metabolism",
+	W 2
+
+"metabolism"
+	S "63",
+	W 2
+
+"63"
+	S "i",
+	W 2
+
+"just"
+	S "picked",
+	W 2
+
+"picked"
+	S "up",
+	W 2
+
+"book"
+	S "called",
+	W 2
+
+"glue"
+	S "in",
+	W 2
+
+"many"
+	S "lands",
+	W 2
+
+"lands"
+	S "and",
+	W 2
+
+"put"
+	S "it",
+	W 2
+
+"64"
+	S "i",
+	W 2
+
+"old"
+	S "someday",
+	W 2
+
+	S "young",
+	W 2
+
+"young"
+	S "for",
+	W 2
+
+"stuff"
+	S "65",
+	W 2
+
+"65"
+	S "i",
+	W 2
+
+"wash"
+	S "condition",
+	W 2
+
+"condition"
+	S "perm",
+	W 2
+
+"perm"
+	S "curl",
+	W 2
+
+"curl"
+	S "tease",
+	W 2
+
+"tease"
+	S "torment",
+	W 2
+
+"torment"
+	S "my",
+	W 2
+
+"hair"
+	S "66",
+	W 2
+
+"66"
+	S "i",
+	W 2
+
+"much"
+	S "guilt",
+	W 2
+
+"guilt"
+	S "67",
+	W 2
+
+"67"
+	S "there",
+	W 2
+
+"important"
+	S "world",
+	W 2
+
+"issues"
+	S "that",
+	W 2
+
+"need"
+	S "grouting",
+	W 2
+
+	S "worrying",
+	W 2
+
+"worrying"
+	S "about",
+	W 2
+
+"68"
+	S "i",
+	W 2
+
+"draw"
+	S "cubby",
+	W 2
+
+"cubby"
+	S "for",
+	W 2
+
+"art"
+	S "scholarship",
+	W 2
+
+"scholarship"
+	S "69",
+	W 2
+
+"69"
+	S "i",
+	W 2
+
+"uncomfortable"
+	S "when",
+	W 2
+
+"when"
+	S "i",
+	W 2
+
+"alone"
+	S "or",
+	W 2
+
+"others"
+	S "70",
+	W 2
+
+"70"
+	S "i",
+	W 2
+
+"promised"
+	S "to",
+	W 2
+
+"help"
+	S "a",
+	W 2
+
+"friend"
+	S "fold",
+	W 2
+
+"fold"
+	S "road",
+	W 2
+
+"road"
+	S "maps",
+	W 2
+
+"maps"
+	S "71",
+	W 2
+
+"71"
+	S "i",
+	W 2
+
+"feel"
+	S "a",
+	W 2
+
+"song"
+	S "coming",
+	W 2
+
+"coming"
+	S "on",
+	W 2
+
+"72"
+	S "i",
+	W 2
+
+"less"
+	S "popular",
+	W 2
+
+"popular"
+	S "73",
+	W 2
+
+"73"
+	S "my",
+	W 2
+
+"bathroom"
+	S "tiles",
+	W 2
+
+"tiles"
+	S "need",
+	W 2
+
+"grouting"
+	S "74",
+	W 2
+
+"74"
+	S "i",
+	W 2
+
+"bleach"
+	S "my",
+	W 2
+
+"hare"
+	S "75",
+	W 2
+
+"75"
+	S "i",
+	W 2
+
+"waiting"
+	S "to",
+	W 2
+
+"already"
+	S "a",
+	W 2
+
+"winner"
+	S "76",
+	W 2
+
+"76"
+	S "i",
+	W 2
+
+"writing"
+	S "a",
+	W 2
+
+"letter"
+	S "to",
+	W 2
+
+"richard"
+	S "simmons",
+	W 2
+
+"simmons"
+	S "77",
+	W 2
+
+"77"
+	S "you",
+	W 2
+
+"you"
+	S "know",
+	W 2
+
+	S "want",
+	W 2
+
+"know"
+	S "how",
+	W 2
+
+"we"
+	S "psychos",
+	W 2
+
+"psychos"
+	S "are",
+	W 2
+
+"78"
+	S "my",
+	W 2
+
+"favorite"
+	S "commercial",
+	W 2
+
+"commercial"
+	S "is",
+	W 2
+
+"tv"
+	S "79",
+	W 2
+
+"79"
+	S "i",
+	W 2
+
+"study"
+	S "for",
+	W 2
+
+"blood"
+	S "test",
+	W 2
+
+"test"
+	S "80",
+	W 2
+
+"80"
+	S "i",
+	W 2
+
+"someday"
+	S "81",
+	W 2
+
+"81"
+	S "i",
+	W 2
+
+"traded"
+	S "to",
+	W 2
+
+"cincinnati"
+	S "82",
+	W 2
+
+"82"
+	S "i",
+	W 2
+
+"observing"
+	S "national",
+	W 2
+
+"national"
+	S "apathy",
+	W 2
+
+"apathy"
+	S "week",
+	W 2
+
+"week"
+	S "83",
+	W 2
+
+"83"
+	S "i",
+	W 2
+
+"rotate"
+	S "my",
+	W 2
+
+"crops"
+	S "84",
+	W 2
+
+"84"
+	S "my",
+	W 2
+
+"uncle"
+	S "escaped",
+	W 2
+
+"escaped"
+	S "again",
+	W 2
+
+"again"
+	S "85",
+	W 2
+
+"85"
+	S "i",
+	W 2
+
+"elbows"
+	S "in",
+	W 2
+
+"waxy"
+	S "buildup",
+	W 2
+
+"buildup"
+	S "86",
+	W 2
+
+"86"
+	S "i",
+	W 2
+
+"knit"
+	S "some",
+	W 2
+
+"dust"
+	S "bunnies",
+	W 2
+
+"bunnies"
+	S "for",
+	W 2
+
+"charity"
+	S "bazaar",
+	W 2
+
+"bazaar"
+	S "87",
+	W 2
+
+"87"
+	S "i",
+	W 2
+
+"baby"
+	S "shoes",
+	W 2
+
+"shoes"
+	S "bronzed",
+	W 2
+
+"bronzed"
+	S "88",
+	W 2
+
+"88"
+	S "i",
+	W 2
+
+"court"
+	S "for",
+	W 2
+
+"kitty"
+	S "littering",
+	W 2
+
+"littering"
+	S "89",
+	W 2
+
+"89"
+	S "i",
+	W 2
+
+"count"
+	S "the",
+	W 2
+
+"bristles"
+	S "in",
+	W 2
+
+"toothbrush"
+	S "90",
+	W 2
+
+"90"
+	S "i",
+	W 2
+
+"thaw"
+	S "some",
+	W 2
+
+"karate"
+	S "chops",
+	W 2
+
+"chops"
+	S "for",
+	W 2
+
+"dinner"
+	S "91",
+	W 2
+
+"91"
+	S "having",
+	W 2
+
+"fun"
+	S "gives",
+	W 2
+
+"gives"
+	S "me",
+	W 2
+
+"prickly"
+	S "heat",
+	W 2
+
+"heat"
+	S "92",
+	W 2
+
+"92"
+	S "i",
+	W 2
+
+"missing"
+	S "persons",
+	W 2
+
+"persons"
+	S "bureau",
+	W 2
+
+"bureau"
+	S "to",
+	W 2
+
+"anyone"
+	S "is",
+	W 2
+
+"93"
+	S "i",
+	W 2
+
+"jog"
+	S "my",
+	W 2
+
+"memory"
+	S "94",
+	W 2
+
+"94"
+	S "my",
+	W 2
+
+"palm"
+	S "reader",
+	W 2
+
+"reader"
+	S "advised",
+	W 2
+
+"advised"
+	S "against",
+	W 2
+
+"against"
+	S "it",
+	W 2
+
+"95"
+	S "my",
+	W 2
+
+"dress"
+	S "for",
+	W 2
+
+"obscurity"
+	S "class",
+	W 2
+
+"96"
+	S "i",
+	W 2
+
+"stay"
+	S "home",
+	W 2
+
+"snore"
+	S "97",
+	W 2
+
+"97"
+	S "i",
+	W 2
+
+"prefer"
+	S "to",
+	W 2
+
+"remain"
+	S "an",
+	W 2
+
+"enigma"
+	S "98",
+	W 2
+
+"98"
+	S "i",
+	W 2
+
+"think"
+	S "you",
+	W 2
+
+"your"
+	S "name",
+	W 2
+
+"name"
+	S "99",
+	W 2
+
+"99"
+	S "i",
+	W 2
+
+"sit"
+	S "up",
+	W 2
+
+"sick"
+	S "ant",
+	W 2
+
+"ant"
+	S "100",
+	W 2
+
+"100"
+	S "i",
+	W 2
+
+"cut"
+	S "down",
+	W 2
+
+"well"
+	S "maybe",
+	W 2
+
+"maybe"
